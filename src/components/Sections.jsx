@@ -8,10 +8,12 @@ export function LogosStrip() {
   return (
     <div className="py-10 border-t border-b border-white/[0.07] overflow-hidden">
       <p className="text-center text-dim text-[11px] uppercase tracking-[0.1em] mb-6">Works with every major AI video model</p>
-      <div className="flex items-center logos-track gap-16 w-max">
-        {doubled.map((l, i) => (
-          <span key={i} className="font-syne font-bold text-dim hover:text-muted transition-colors whitespace-nowrap text-base">{l}</span>
-        ))}
+      <div className="overflow-hidden">
+        <div className="logos-track flex items-center gap-16 w-max">
+          {doubled.map((l, i) => (
+            <span key={i} className="font-syne font-bold text-dim hover:text-muted transition-colors whitespace-nowrap text-base select-none">{l}</span>
+          ))}
+        </div>
       </div>
     </div>
   )

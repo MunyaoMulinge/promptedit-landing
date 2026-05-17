@@ -46,7 +46,10 @@
   }
   .feature-card-hover:hover::before { opacity: 1; }
 
-  .logos-track { animation: marquee 20s linear infinite; }
+  .logos-track {
+    animation: marquee 24s linear infinite;
+    will-change: transform;
+  }
   .logos-track:hover { animation-play-state: paused; }
 }
 
